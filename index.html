@@ -18,61 +18,65 @@
 <body class="bg-gray-100">
 
 <header class="bg-white shadow">
-<nav class="container mx-auto flex justify-between items-center p-4">
-     <!-- Logo -->
-     <div class="text-xs">
-          <img src="images/creative-logo.png" alt="">
-     </div>
-
-     <!-- Navigation Links -->
-     <div class="hidden md:flex space-x-4">
-          <a href="#" class="text-gray-600 hover:text-gray-800">Home</a>
-          <a href="#" class="text-gray-600 hover:text-gray-800">About Us</a>
-          <a href="#" class="text-gray-600 hover:text-gray-800">Up Skill</a>
-          <a href="#" class="text-gray-600 hover:text-gray-800">Contact Us</a>
-     </div>
-
-     <!-- Right Section (Button and Moon Icon) -->
-     <div class="flex items-center space-x-4">
-          <button class="bg-[#F44335] text-white px-2 py-1 rounded hover:bg-blue-600">Get Started</button>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-               <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
-          </svg>
-          
-     </div>
-
-     <!-- Mobile Menu Button -->
-     <div class="md:hidden">
-          <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
-               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-               <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+     <nav class="container mx-auto flex justify-between items-center p-4">
+          <!-- Logo -->
+          <div class="text-xs">
+               <img src="images/creative-logo.png" alt="">
+          </div>
+     
+          <!-- Navigation Links -->
+          <div class="hidden md:flex space-x-4">
+               <a href="#" class="text-gray-600 hover:text-gray-800">Home</a>
+               <a href="#" class="text-gray-600 hover:text-gray-800">About Us</a>
+               <a href="#" class="text-gray-600 hover:text-gray-800">Up Skill</a>
+               <a href="#" class="text-gray-600 hover:text-gray-800">Contact Us</a>
+          </div>
+     
+          <!-- Right Section (Button and Moon Icon) -->
+          <div class="flex items-center space-x-4">
+               <button class="bg-[#F44335] text-white px-2 py-1 rounded hover:bg-blue-600">Get Started</button>
+               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
                </svg>
-          </button>
+               
+          </div>
+     
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden">
+               <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+               </button>
+          </div>
+     </nav>
+     
+     <!-- Mobile Menu -->
+     <div id="mobile-menu" class="md:hidden hidden">
+          <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-200">Home</a>
+          <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-200">About Us</a>
+          <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-200">Up Skill</a>
+          <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-200">Contact Us</a>
      </div>
-</nav>
+     </header>
+     
+                                        <!-------End navbar   -------->
+     
+                                        <!----------- Hero section    ----------->
+     
+     
+     
 
-<!-- Mobile Menu -->
-<div id="mobile-menu" class="md:hidden hidden">
-     <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-200">Home</a>
-     <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-200">About Us</a>
-     <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-200">Up Skill</a>
-     <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-200">Contact Us</a>
-</div>
-</header>
+     <script>
+          const mobileMenuButton = document.getElementById('mobile-menu-button');
+          const mobileMenu = document.getElementById('mobile-menu');
+          
+          mobileMenuButton.addEventListener('click', () => {
+               mobileMenu.classList.toggle('hidden');
+          });
+     </script>
+          
 
-<!-------End navber   -------->
-
-
-
-
-<script>
-const mobileMenuButton = document.getElementById('mobile-menu-button');
-const mobileMenu = document.getElementById('mobile-menu');
-
-mobileMenuButton.addEventListener('click', () => {
-     mobileMenu.classList.toggle('hidden');
-});
-</script>
 
 </body>
 </html>

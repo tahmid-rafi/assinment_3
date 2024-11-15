@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+@layer components{
+.nav_items{
+     @apply  dark:text-white hover:underline transition-all duration-300 font-medium;
+}
+
+.btn_primary{
+     @apply  text-white py-0 sm:py-1 md:py-2 px-1 sm:px-2 md:px-4 rounded-md outline-none border-2 hover:bg-transparent transition-all duration-300 text-nowrap;
+}
+
+.btn_secondary{
+     @apply bg-white py-0 sm:py-1 md:py-2 px-1 sm:px-2 md:px-4 rounded-md outline-none border-2 border-gray-300 hover:text-white transition-all duration-300 text-nowrap;
+}
+
+.skill{
+     @apply rounded-full border text-base px-2 py-1 text-nowrap  dark:text-white;
+}
+
+.course{
+     @apply  dark:text-white rounded-full border dark:border-white px-4 py-2 text-nowrap;
+}
+
+}
