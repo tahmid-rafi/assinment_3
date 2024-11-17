@@ -22,7 +22,7 @@ module.exports = {
       },
 
       backgroundImage: { 
-        'bottom-cover': "url('/assets/img/bottom-cover.png')"
+        'bottom-cover': "url('images/group-study.png')"
       }
     },
   },
