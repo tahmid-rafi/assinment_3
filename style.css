@@ -3,26 +3,24 @@
 @tailwind utilities;
 
 
-
 @layer components{
-.nav_items{
-     @apply  dark:text-white hover:underline transition-all duration-300 font-medium;
+.nav-item{
+     @apply text-sec-text-color dark:text-white hover:text-btn-color dark:hover:text-btn-color hover:underline transition-all duration-300 font-medium;
 }
 
-.btn_primary{
-     @apply  text-white py-0 sm:py-1 md:py-2 px-1 sm:px-2 md:px-4 rounded-md outline-none border-2 hover:bg-transparent transition-all duration-300 text-nowrap;
+.btn-primary{
+     @apply bg-btn-color text-white py-0 sm:py-1 md:py-2 px-1 sm:px-2 md:px-4 rounded-md outline-none border-2 border-btn-color hover:bg-transparent hover:text-btn-color transition-all duration-300 text-nowrap;
 }
 
-.btn_secondary{
-     @apply bg-white py-0 sm:py-1 md:py-2 px-1 sm:px-2 md:px-4 rounded-md outline-none border-2 border-gray-300 hover:text-white transition-all duration-300 text-nowrap;
+.btn-secondary{
+     @apply bg-white text-sec-text-color py-0 sm:py-1 md:py-2 px-1 sm:px-2 md:px-4 rounded-md outline-none border-2 border-gray-300 hover:bg-btn-color hover:text-white hover:border-btn-color transition-all duration-300 text-nowrap;
 }
 
 .skill{
-     @apply rounded-full border text-base px-2 py-1 text-nowrap  dark:text-white;
+     @apply rounded-full border border-btn-color text-base px-2 py-1 text-nowrap text-sec-text-color dark:text-white;
 }
 
 .course{
-     @apply  dark:text-white rounded-full border dark:border-white px-4 py-2 text-nowrap;
+     @apply text-sec-text-color dark:text-white rounded-full border border-sec-text-color dark:border-white px-2 py-2 text-nowrap;
 }
-
 }

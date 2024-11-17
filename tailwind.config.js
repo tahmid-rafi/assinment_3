@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: ['*'],
   theme: {
     extend: {
-      extend: {
       fontFamily: {
         'plus-jakarta': '"Plus Jakarta Sans", sans-serif',
         'poppins': '"Poppins", sans-serif'
@@ -23,10 +23,9 @@ module.exports = {
 
       backgroundImage: { 
         'bottom-cover': "url('/assets/img/bottom-cover.png')"
-      },
+      }
     },
   },
-},
   plugins: [],
 }
 
